@@ -1,0 +1,24 @@
+# Dataset files
+*.csv
+
+# Saved machine learning models
+*.pkl
+*.joblib
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+.venv/
+
+# Environment variables
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
