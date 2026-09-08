@@ -1,98 +1,297 @@
 # 🍽️ Zomato Restaurant Analytics & Rating Prediction
 
-A complete **Data Analytics + Machine Learning project** that analyzes restaurant data and predicts restaurant ratings using a trained **Random Forest Regression** model.
+An end-to-end **Data Analytics and Machine Learning project** that analyzes restaurant data, identifies key factors influencing restaurant ratings, and predicts restaurant ratings using a tuned **Random Forest Regression model**.
 
-The project combines:
-
-- 📊 Exploratory Data Analysis
-- 📈 Power BI Dashboard
-- 🤖 Machine Learning
-- ⚙️ Feature Engineering & Preprocessing
-- 🔍 Hyperparameter Tuning
-- 🌐 Streamlit Web Application
-- 🚀 Model Deployment
+The project combines **Python, Exploratory Data Analysis, Machine Learning, Power BI, and Streamlit** to demonstrate a complete data science workflow from raw data to an interactive deployed application.
 
 ---
 
 ## 📌 Project Overview
 
-Restaurant ratings are influenced by several factors such as location, restaurant type, cuisines, online ordering, table booking, customer votes, and approximate cost.
+Restaurant platforms contain large amounts of information related to cuisines, pricing, locations, customer preferences, online ordering, table booking, and ratings.
 
-This project analyzes these factors and builds a machine learning model to predict the expected restaurant rating.
+The objective of this project is to analyze these factors and build a machine learning model capable of predicting restaurant ratings.
 
-The project has two major components:
+The complete workflow includes:
 
-1. **Restaurant Analytics Dashboard** — Business insights using Power BI.
-2. **Restaurant Rating Prediction** — Machine learning model deployed through Streamlit.
-
----
-
-## 🎯 Objectives
-
-- Analyze restaurant distribution and characteristics.
-- Identify important restaurant-related patterns.
-- Study ratings, votes, cost, cuisines, and services.
-- Analyze online ordering and table booking.
-- Build a machine learning model for rating prediction.
-- Compare multiple regression algorithms.
-- Tune the best-performing model.
-- Deploy the final model as an interactive web application.
+* Data Cleaning & Preprocessing
+* Exploratory Data Analysis (EDA)
+* Feature Engineering
+* Power BI Dashboard
+* Machine Learning Model Development
+* Hyperparameter Tuning
+* Model Evaluation
+* Streamlit Web Application
+* Cloud Deployment
 
 ---
 
-# 📊 Power BI Dashboard
+## 🎯 Project Objectives
 
-## Zomato Restaurant Analysis
+The main objectives of this project are:
 
-The Power BI dashboard provides an interactive overview of the restaurant dataset.
-
-### Key KPIs
-
-| Metric | Value |
-|---|---:|
-| Total Restaurants | 41.59K |
-| Average Rating | 3.70 |
-| Total Votes | 15M |
-| Average Cost for Two | ₹602.33 |
-| Restaurants Offering Online Order | 65.28% |
-
-### Dashboard Analysis
-
-The dashboard includes:
-
-- Restaurant count by location
-- Average rating by location
-- Top restaurant types
-- Top cuisines
-- Online order analysis
-- Table booking analysis
-- Cost vs. average rating
-- Restaurant distribution
-- Interactive filters
-
-### Dashboard Filters
-
-Users can filter the dashboard by:
-
-- Location
-- Online Order
-- Restaurant Type
-- Cuisine
-- Table Booking
+* Analyze restaurant trends and customer preferences
+* Identify important factors affecting restaurant ratings
+* Explore relationships between price, location, services, cuisines, and ratings
+* Build an accurate restaurant rating prediction model
+* Create an interactive Power BI dashboard
+* Develop a user-friendly prediction application
+* Deploy the final machine learning solution using Streamlit Cloud
 
 ---
 
-# 🤖 Machine Learning
+## 🛠️ Tech Stack
 
-## Problem Statement
+### Programming & Data Analysis
 
-Predict the restaurant's **aggregate rating** based on restaurant characteristics and customer engagement information.
+* Python
+* Pandas
+* NumPy
 
-### Problem Type
+### Data Visualization
 
-**Supervised Machine Learning → Regression**
+* Matplotlib
+* Seaborn
+* Power BI
 
-### Target Variable
+### Machine Learning
+
+* Scikit-learn
+* Random Forest Regressor
+* Hyperparameter Tuning
+
+### Deployment
+
+* Streamlit
+* Streamlit Community Cloud
+
+### Development Tools
+
+* Jupyter Notebook
+* VS Code
+* Git
+* GitHub
+
+---
+
+## 📊 Exploratory Data Analysis
+
+The dataset was cleaned and analyzed to understand restaurant characteristics and rating patterns.
+
+Key areas explored include:
+
+* Restaurant rating distribution
+* Online ordering availability
+* Table booking availability
+* Cost distribution
+* Location-wise restaurant performance
+* Cuisine patterns
+* Relationship between restaurant features and ratings
+
+The EDA helped identify meaningful patterns and provided the foundation for feature engineering and model development.
+
+---
+
+## 📈 Power BI Dashboard
+
+An interactive **Power BI dashboard** was developed to provide a business-level view of restaurant performance.
+
+The dashboard helps analyze:
+
+* Overall restaurant performance
+* Rating distribution
+* Location-wise trends
+* Online ordering behavior
+* Table booking trends
+* Cost patterns
+* Cuisine-level insights
+
+### Dashboard Preview
+
+> Add the final Power BI dashboard screenshot here.
 
 ```text
-rate
+screenshots/powerbi_dashboard.png
+```
+
+---
+
+## 🤖 Machine Learning Model
+
+Multiple stages of model development were performed before selecting the final model.
+
+The final prediction system uses a **Random Forest Regressor** with optimized hyperparameters.
+
+### Final Model Performance
+
+| Metric   |      Score |
+| -------- | ---------: |
+| MAE      | **0.1603** |
+| RMSE     | **0.2233** |
+| R² Score | **0.7409** |
+
+### Interpretation
+
+* **MAE = 0.1603** means the model's predictions differ from actual ratings by approximately 0.16 rating points on average.
+* **RMSE = 0.2233** indicates relatively low overall prediction error.
+* **R² = 0.7409** means the model explains approximately **74.09% of the variation** in restaurant ratings on the evaluation data.
+
+---
+
+## ⚙️ Machine Learning Workflow
+
+```text
+Raw Dataset
+     ↓
+Data Cleaning
+     ↓
+Exploratory Data Analysis
+     ↓
+Feature Engineering
+     ↓
+Train-Test Split
+     ↓
+Random Forest Regression
+     ↓
+Hyperparameter Tuning
+     ↓
+Model Evaluation
+     ↓
+Model Serialization
+     ↓
+Streamlit Application
+     ↓
+Cloud Deployment
+```
+
+---
+
+## 🌐 Streamlit Prediction App
+
+A Streamlit web application was developed to make the trained machine learning model accessible through a simple interactive interface.
+
+Users can enter restaurant-related information and receive a predicted restaurant rating from the trained model.
+
+### Application Features
+
+* Simple interactive UI
+* Restaurant feature input
+* Real-time rating prediction
+* Pre-trained Random Forest model
+* Input validation
+* Cloud-based deployment
+
+### App Preview
+
+> Add the final Streamlit application screenshot here.
+
+```text
+screenshots/streamlit_app.png
+```
+
+---
+
+## 📁 Recommended Repository Structure
+
+```text
+ZOMATO_RATING_PREDICTION/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+│
+├── data/
+│   └── zomato.csv
+│
+├── notebooks/
+│   └── zomato_analysis.ipynb
+│
+├── model/
+│   └── rating_model.pkl
+│
+├── dashboard/
+│   └── zomato_dashboard.pbix
+│
+└── screenshots/
+    ├── powerbi_dashboard.png
+    └── streamlit_app.png
+```
+
+---
+
+## 🚀 Run the Project Locally
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Ganu180/ZOMATO_RATING_PREDICTION.git
+```
+
+### 2. Open the Project
+
+```bash
+cd ZOMATO_RATING_PREDICTION
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the Streamlit Application
+
+```bash
+streamlit run app.py
+```
+
+The application will start locally in your browser.
+
+---
+
+## 💡 Key Learnings
+
+Through this project, I gained hands-on experience in:
+
+* Cleaning and preprocessing real-world datasets
+* Performing exploratory data analysis
+* Creating business dashboards using Power BI
+* Feature engineering for machine learning
+* Training regression models
+* Hyperparameter tuning
+* Evaluating models using MAE, RMSE, and R²
+* Building interactive ML applications with Streamlit
+* Managing large machine learning model files
+* Using Git and GitHub for version control
+* Deploying machine learning applications to the cloud
+
+---
+
+## 🔮 Future Improvements
+
+Potential improvements include:
+
+* Compare additional regression algorithms
+* Implement advanced feature engineering
+* Add model explainability using SHAP
+* Improve application UI/UX
+* Add additional restaurant analytics
+* Automate model retraining
+* Build an API for prediction
+* Deploy using containerized infrastructure
+
+---
+
+## 👨‍💻 Author
+
+**Ganesh Gokhale**
+
+Data Science & Data Analytics | Python | Machine Learning | Power BI
+
+GitHub: `Ganu180`
+
+---
+
+## ⭐ Support
+
+If you found this project useful or interesting, consider giving the repository a ⭐.
