@@ -94,7 +94,9 @@ The EDA helped identify meaningful patterns and provided the foundation for feat
 
 ## 📈 Power BI Dashboard
 
-An interactive **Power BI dashboard** was developed to provide a business-level view of restaurant performance.
+The interactive Power BI dashboard provides insights into restaurant ratings, locations, cuisines, pricing, and customer preferences.
+
+![Power BI Dashboard](screenshots/powerbi_dashboard.png)
 
 The dashboard helps analyze:
 
@@ -138,6 +140,14 @@ The final prediction system uses a **Random Forest Regressor** with optimized hy
 
 ---
 
+### 🤖 Model Workflow
+
+The final prediction pipeline includes data preprocessing, feature engineering, Random Forest model training, hyperparameter tuning, evaluation, and deployment.
+
+![Model Workflow](screenshots/model_workflow.png)
+
+---
+
 ## ⚙️ Machine Learning Workflow
 
 ```text
@@ -168,9 +178,13 @@ Cloud Deployment
 
 ## 🌐 Streamlit Prediction App
 
-A Streamlit web application was developed to make the trained machine learning model accessible through a simple interactive interface.
+The deployed Streamlit application allows users to enter restaurant details and receive a predicted restaurant rating.
 
-Users can enter restaurant-related information and receive a predicted restaurant rating from the trained model.
+![Streamlit Prediction App](screenshots/streamlit_app.png)
+
+### 🎯 Prediction Result
+
+![Prediction Result](screenshots/prediction_results.png)
 
 ### Application Features
 
@@ -181,7 +195,7 @@ Users can enter restaurant-related information and receive a predicted restauran
 * Input validation
 * Cloud-based deployment
 
-### App Preview
+### App Preview.
 
 > Add the final Streamlit application screenshot here.
 
