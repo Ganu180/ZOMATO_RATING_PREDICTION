@@ -1,24 +1,27 @@
-# Dataset files
-*.csv
-
-# Saved machine learning models
-*.pkl
-*.joblib
-
-# Jupyter Notebook
-.ipynb_checkpoints/
-
-# Python cache
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
 
 # Virtual environment
 venv/
+env/
 .venv/
 
-# Environment variables
-.env
+# Jupyter
+.ipynb_checkpoints/
 
-# OS files
+# IDE
+.vscode/
+.idea/
+
+# OS
 .DS_Store
 Thumbs.db
+
+# Python cache
+*.log
+
+# Temporary files
+*.tmp
+*.temp
