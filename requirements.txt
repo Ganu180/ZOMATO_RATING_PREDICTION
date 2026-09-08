@@ -6,7 +6,3 @@ scikit-learn
 joblib
 jupyter
 streamlit
-pandas
-numpy
-scikit-learn
-joblib
