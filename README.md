@@ -103,14 +103,10 @@ The Machine Learning stage focused on predicting restaurant ratings using restau
 
 After model development and optimization, the final prediction system uses a tuned **Random Forest Regressor**.
 
-## 🎯 Final Model Performance
-
-| Metric | Score |
-|---|---:|
-| MAE | **0.1603** |
-| RMSE | **0.2233** |
-| R² Score | **0.7409** |
-
+### Cross-Validation
+5-fold cross-validation on the training data gave a mean R² of 0.832.
+The held-out test R² is 0.741. The gap is being investigated
+(possible duplicate restaurant rows across folds).
 ### 📌 Performance Interpretation
 
 - **MAE = 0.1603** — predictions differ from actual ratings by approximately **0.16 rating points on average**.
